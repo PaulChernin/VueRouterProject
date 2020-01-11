@@ -1,9 +1,8 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Главная</router-link> |
-      <router-link to="/about">О проекте</router-link> |
-      <router-link to="/contacts">Контакты</router-link>
+      <router-link to="on">On</router-link> |
+      <router-link to="off">Off</router-link>
     </div>
     <router-view/>
   </div>
@@ -24,10 +23,15 @@
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: white;
 }
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+body {
+  margin: 0;
+  background-color: black;
 }
 </style>
